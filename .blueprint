@@ -1,0 +1,22 @@
+created:
+    - app/Http/Controllers/OrgUnitController.php
+    - database/factories/OrgUnitFactory.php
+    - database/migrations/2024_09_18_113742_create_org_units_table.php
+    - app/Models/OrgUnit.php
+    - database/seeders/OrgUnitSeeder.php
+    - tests/Feature/Http/Controllers/OrgUnitControllerTest.php
+    - app/Http/Requests/OrgUnitStoreRequest.php
+    - app/Http/Requests/OrgUnitUpdateRequest.php
+    - resources/views/orgUnit/index.blade.php
+    - resources/views/orgUnit/create.blade.php
+    - resources/views/orgUnit/show.blade.php
+    - resources/views/orgUnit/edit.blade.php
+    - tests/Feature/Http/Controllers/OrgUnitControllerTest.php
+updated:
+    - routes/web.php
+    - tests/Pest.php
+    - tests/Feature/ExampleTest.php
+    - tests/Unit/ExampleTest.php
+models:
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string nullable' }
+    OrgUnit: { name: 'string:400', softdeletes: softDeletes }

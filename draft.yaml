@@ -1,0 +1,10 @@
+models:
+  OrgUnit:
+    name: string:400
+    softDeletes
+
+controllers: 
+  OrgUnit:
+    resource
+
+seeders: OrgUnit
