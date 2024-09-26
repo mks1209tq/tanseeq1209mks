@@ -49,8 +49,8 @@ class User extends Authenticatable
         ];
     }
 
-    // public function canAccessPanel(Panel $panel): bool
-    // {
-    //     return str_ends_with($this->email, '@tanseeqinvestment.com') && $this->hasVerifiedEmail();
-    // }
+    public function canAccessPanel(Panel $panel): bool
+     {
+         return true, // str_ends_with($this->email, '@tanseeqinvestment.com') && $this->hasVerifiedEmail();
+     }
 }
