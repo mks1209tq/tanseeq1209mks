@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-//use Filament\Models\Contracts\FilamentUser;
+use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasAvatar;
 use Spatie\Permission\Traits\HasRoles;
 
