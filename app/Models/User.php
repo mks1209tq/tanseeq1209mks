@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use Filament\Panel;
+
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasAvatar;
 use Spatie\Permission\Traits\HasRoles;
