@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('FILESYSTEM_DISK', 'local'),
+    'default' => env('FILESYSTEM_DISK', 'idrive'),
 
     /*
     |--------------------------------------------------------------------------
@@ -44,6 +44,18 @@ return [
             'visibility' => 'public',
             'throw' => false,
         ],
+
+        'idrive' => [
+            'driver' => 's3',
+            'key' => env('IDRIVE_API_KEY'),
+            'secret' => env('IDRIVE_API_SECRET'),
+            'region' => env('IDRIVE_REGION'),
+            'bucket' => env('IDRIVE_BUCKET'),
+            'version' => env('IDRIVE_VERSION'),
+            'endpoint' => env('IDRIVE_ENDPOINT'),
+            'use_path_style_endpoint' => true
+        ],
+
 
         's3' => [
             'driver' => 's3',

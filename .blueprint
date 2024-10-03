@@ -1,22 +1,13 @@
 created:
-    - app/Http/Controllers/OrgUnitController.php
-    - database/factories/OrgUnitFactory.php
-    - database/migrations/2024_09_18_113742_create_org_units_table.php
-    - app/Models/OrgUnit.php
-    - database/seeders/OrgUnitSeeder.php
-    - tests/Feature/Http/Controllers/OrgUnitControllerTest.php
-    - app/Http/Requests/OrgUnitStoreRequest.php
-    - app/Http/Requests/OrgUnitUpdateRequest.php
-    - resources/views/orgUnit/index.blade.php
-    - resources/views/orgUnit/create.blade.php
-    - resources/views/orgUnit/show.blade.php
-    - resources/views/orgUnit/edit.blade.php
-    - tests/Feature/Http/Controllers/OrgUnitControllerTest.php
-updated:
-    - routes/web.php
-    - tests/Pest.php
-    - tests/Feature/ExampleTest.php
-    - tests/Unit/ExampleTest.php
+    - database/factories/AssetFactory.php
+    - database/migrations/2024_10_01_101534_create_assets_table.php
+    - app/Models/Asset.php
+    - database/seeders/AssetSeeder.php
 models:
+    Category: { name: string, description: 'string nullable', parent_id: 'integer nullable' }
+    Document: { title: string, filename: string, url: string, published_at: 'datetime nullable' }
+    Employee: { employee_code: string, full_name: 'string nullable', date_of_birth: 'date nullable', hire_date: 'datetime nullable', termination_date: 'datetime nullable', salutation: 'string nullable', status: 'string nullable', employee_status: 'string nullable', company: string, gender: 'string nullable', sponsor: 'string nullable', nationality: 'string nullable', category: 'string nullable', department: 'string nullable', religion: 'string nullable', physically_challenged: 'string nullable', division: 'string nullable', designation: 'string nullable', company_transportation: 'string nullable', medical_insurance: 'string nullable', salary_transfer_letter: 'string nullable', cost_head: 'string nullable', entity: 'string nullable', line_manager_1: 'string nullable', line_manager_2: 'string nullable' }
+    OrgUnit: { name: string }
+    Position: { name: string, category_id: integer }
     User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string nullable' }
-    OrgUnit: { name: 'string:400', softdeletes: softDeletes }
+    Asset: { name: string(40), softdeletes: softDeletes }

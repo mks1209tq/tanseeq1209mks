@@ -1,10 +1,11 @@
 models:
-  OrgUnit:
-    name: string:400
+  Asset:
+    name: string(40)
+    relations:
+      - Employee
     softDeletes
+    
+    
 
-controllers: 
-  OrgUnit:
-    resource
-
-seeders: OrgUnit
+seeders: Asset
+    
